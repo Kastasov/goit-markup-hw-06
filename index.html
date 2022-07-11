@@ -397,6 +397,7 @@
         </div>
       </div>
     </footer>
+
     <!-- modal -->
     <section>
       <div class="modal-overlay is-hidden" data-modal>
@@ -406,17 +407,32 @@
               <use href="./images/logo/icons.svg#icon-close-cross"></use>
             </svg>
           </button>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, voluptate ullam quaerat
-            necessitatibus vero mollitia ad consequatur suscipit temporibus iste? Eaque id odit
-            possimus explicabo animi! Natus eum labore ducimus odit nobis harum culpa iste sint
-            magni, soluta rerum aliquid nihil voluptate perferendis ut eaque, saepe aliquam velit,
-            veritatis laboriosam quis! Quod reiciendis doloremque porro veritatis iste temporibus
-            itaque ad, exercitationem voluptatum alias eveniet quo nulla atque repellendus iusto
-            quis natus corrupti incidunt voluptate quaerat et quas facere voluptatibus. Sequi,
-            expedita quidem eaque culpa earum maiores voluptas cum. Dolorem perferendis enim
-            reprehenderit omnis, aliquid quas officiis possimus delectus minima assumenda.
-          </p>
+
+          <!-- название окна для читалок -->
+          <h2 class="visually-hidden">форма обратной связи</h2>
+          <h3>Оставьте свои данные, мы вам перезвоним</h3>
+          <form>
+            <label for="name" class="form-input-title">Имя</label>
+            <input id="name" type="text" name="request-name" class="form-input-cell" />
+            <label for="phone" class="form-input-title">Телефон</label>
+            <input id="phone" type="tel" name="request-phone" class="form-input-cell" />
+            <label for="email" class="form-input-title">Почта</label>
+            <input id="email" type="email" name="request-email" class="form-input-cell" />
+            <label for="comment" class="form-input-title">Комментарий</label>
+            <textarea
+              id="comment"
+              name="comment"
+              class="form-input-cell"
+              placeholder="Введите текст"
+            ></textarea>
+
+            <input id="form-licence" type="checkbox" name="hobby" value="sports" checked />
+            <label for="form-licence" class="licence-link">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a></label
+            >
+          </form>
+          <button type="submit">отправить</button>
         </div>
       </div>
     </section>
