@@ -67,7 +67,7 @@
       <section class="section heroe heroe-background">
         <div class="container">
           <h1 class="heroe-header">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="order-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="order button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -359,6 +359,7 @@
               </ul>
             </address>
           </div>
+
           <div class="footer-socials">
             <p>присоединяйтесь</p>
             <div>
@@ -394,6 +395,26 @@
               </ul>
             </div>
           </div>
+
+          <div class="footer-subscribe">
+            <p>Подпишитесь на рассылку</p>
+
+            <form class="footer-subscribe-form">
+            <label for="subscibe-email"></label>
+            <input type="email" name="subscibe-email" id="subscibe-email" class="subscribe-email-box"
+            placeholder="E-mail"/>
+            <button type="submit" class="subs button">
+              <div class="subs-button-inner"> Подписаться
+                <svg class="subs-button-icon">
+                  <use href="./images/logo/icons.svg#icon-subscribe-icon"></use>
+                </svg>
+              </div>
+            </button>
+            </form>
+          </div>
+        </div>
+
+          
         </div>
       </div>
     </footer>
@@ -410,29 +431,57 @@
 
           <!-- название окна для читалок -->
           <h2 class="visually-hidden">форма обратной связи</h2>
-          <h3>Оставьте свои данные, мы вам перезвоним</h3>
-          <form>
-            <label for="name" class="form-input-title">Имя</label>
-            <input id="name" type="text" name="request-name" class="form-input-cell" />
-            <label for="phone" class="form-input-title">Телефон</label>
-            <input id="phone" type="tel" name="request-phone" class="form-input-cell" />
-            <label for="email" class="form-input-title">Почта</label>
-            <input id="email" type="email" name="request-email" class="form-input-cell" />
-            <label for="comment" class="form-input-title">Комментарий</label>
-            <textarea
+         
+          <form class="contact-request-form" name="contact-request-form" autocomplete="on">
+             <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <div class="form-field">
+              <label for="name" class="form-input-title">Имя</label>
+              <div class="form-input-inner">
+                <input id="name" type="text" name="request-name" class="form-input-cell" />
+                <svg class="form-input-icon">
+                  <use href="./images/logo/icons.svg#icon-form-name"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="phone" class="form-input-title">Телефон</label>
+              <div class="form-input-inner">
+                <input id="phone" type="tel" name="request-phone" class="form-input-cell" />
+                <svg class="form-input-icon">
+                  <use href="./images/logo/icons.svg#icon-form-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="email" class="form-input-title">Почта</label>
+              <div class="form-input-inner">
+                <input id="email" type="email" name="request-email" class="form-input-cell" />
+                <svg class="form-input-icon">
+                  <use href="./images/logo/icons.svg#icon-form-mail"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="comment" class="form-input-title">Комментарий</label>
+              <textarea
               id="comment"
               name="comment"
               class="form-input-cell"
-              placeholder="Введите текст"
-            ></textarea>
+              placeholder="Введите текст"></textarea>
+            </div>
 
-            <input id="form-licence" type="checkbox" name="hobby" value="sports" checked />
-            <label for="form-licence" class="licence-link">
+            <div class="licence-agree-check">
+              <input id="form-licence" type="checkbox" name="hobby" value="sports" checked class="licence-checkbox"/>
+              <label for="form-licence" class="licence-link">
               Соглашаюсь с рассылкой и принимаю
-              <a href="#">Условия договора</a></label
+                <a href="#">Условия договора</a>
+                <span class="icon-input"></span>
+              </label
             >
+            </div>
+            <button type="submit" class="form button">Отправить</button>
           </form>
-          <button type="submit">отправить</button>
+          
         </div>
       </div>
     </section>
