@@ -646,12 +646,11 @@ svg {
 
 .subs.button {
   margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.subs-button-inner {
-  display: inline-flex;
-  align-items: center;
-}
 .subs-button-icon {
   height: 24px;
   width: 24px;
@@ -938,9 +937,6 @@ textarea.form-input-cell {
   transform: translateY(-50%);
   fill: currentColor;
   transition: fill 250ms var(--time-func);
-}
-
-.licence-agree-check {
 }
 
 .licence-checkbox {
